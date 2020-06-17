@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>Jon's Burger Spot</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"/>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/assets/css/burger_style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12" id="first-con">
+                <img src="https://images02.military.com/sites/default/files/2018-10/tasty_burgers_on_wooden_table.png" 
+                class="rounded mx-auto d-block"
+                    alt="cheese-burger" />
+                <h1>Eat-Da-Burger</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <p>Add your burger!!</p>
+                <form class="add-burger">
+                    <input type="text" class="form-control" name="burger-name" value="" id="burger-name" />
+                    <button type="submit" class="btn btn-primary" id="sub">
+                        Submit
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                Devour or Trash the burger!
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <ol id="devour"></ol>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <ol id="deleted"></ol>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="../assets/js/burgers.js"></script>
+</body>
+
+</html>
