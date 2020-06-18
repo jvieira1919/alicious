@@ -27,11 +27,15 @@ router.post("/burgers", (req, res) => {
 router.put("/burgers/:id", (req, res) => {
   const condition = "id = " + req.params.id;
 
-  burger.updateOne({
-    devoured: 1
-  }, condition, (data) => {
-    res.redirect('/');
-  });
+  burger.updateOne(
+    {
+      devoured: 1,
+    },
+    condition,
+    (data) => {
+      res.json({ data });
+    }
+  );
 });
 
 router.delete("/burgers/:id", (req, res) => {
@@ -42,7 +46,7 @@ router.delete("/burgers/:id", (req, res) => {
       // If no rows were changed, then the ID must not exist, so 404
       return res.status(404).end();
     } else {
-      res.json({ id: req.params.id});
+      res.json({ id: req.params.id });
     }
   });
 });
