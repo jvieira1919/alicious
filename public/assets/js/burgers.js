@@ -79,7 +79,7 @@ console.log(burgerId);
       dataType: "json",
       contentType: "application/json",
     }).then(() => {
-      //location.reload();
+      location.reload();
     });
   });
 });
