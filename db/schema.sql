@@ -7,3 +7,5 @@ CREATE TABLE burgers(
 id INT PRIMARY KEY AUTO_INCREMENT,
 burger_name VARCHAR(20),
 devoured BOOLEAN);
+
+select * from burgers;

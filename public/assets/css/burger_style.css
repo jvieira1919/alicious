@@ -8,3 +8,12 @@ h1 {
     text-align: center;
     color: #fd0;
 }
+
+body {
+    background: tomato;
+}
+
+p,
+div {
+    color: #ffdd00
+}
